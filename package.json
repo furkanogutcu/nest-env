@@ -1,7 +1,7 @@
 {
-  "name": "@furkanogutcu/nest-replace-me",
+  "name": "@furkanogutcu/nest-env",
   "version": "0.0.1",
-  "description": "",
+  "description": "Environment configuration module for NestJS with type-safe validation.",
   "author": "Furkan Ogutcu",
   "license": "MIT",
   "readme": "README.md",
@@ -38,12 +38,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/furkanogutcu/nest-replace-me.git"
+    "url": "git+https://github.com/furkanogutcu/nest-env.git"
   },
   "bugs": {
-    "url": "https://github.com/furkanogutcu/nest-replace-me/issues"
+    "url": "https://github.com/furkanogutcu/nest-env/issues"
   },
-  "homepage": "https://github.com/furkanogutcu/nest-replace-me#readme",
+  "homepage": "https://github.com/furkanogutcu/nest-env#readme",
   "peerDependencies": {
     "@nestjs/common": "^11.1.0",
     "@nestjs/core": "^11.1.0",
@@ -92,7 +92,7 @@
     "collectCoverageFrom": [
       "**/*.(t|j)s"
     ],
-    "coverageDirectory": "../coverage",
+    "coverageDirectory": "./coverage",
     "testEnvironment": "node"
   }
 }
