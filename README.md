@@ -49,8 +49,6 @@ export const ENVSchema = z.object({
   DATABASE_URL: z.string(),
   // Add more environment variables as needed
 });
-
-export type EnvironmentConfig = z.infer<typeof ENVSchema>;
 ```
 
 ### 2. Import ENVModule and pass your schema
@@ -80,11 +78,11 @@ export class AppModule {}
 // app.service.ts
 import { Injectable } from '@nestjs/common';
 import { ENVService } from '@furkanogutcu/nest-env';
-import { ENVSchema, EnvironmentConfig } from './env.schema';
+import { ENVSchema } from './env.schema';
 
 @Injectable()
 export class AppService {
-  constructor(private readonly envService: ENVService<EnvironmentConfig>) {}
+  constructor(private readonly envService: ENVService<typeof ENVSchema>) {}
 
   getPort(): number {
     return this.envService.get('PORT');
