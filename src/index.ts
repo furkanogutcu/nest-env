@@ -1,1 +1,3 @@
-export * from './modules/env';
+export * from './env.module';
+export * from './env.service';
+export * from './interfaces';
