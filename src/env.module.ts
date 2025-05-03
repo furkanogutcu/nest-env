@@ -2,8 +2,8 @@ import { DynamicModule, Module } from '@nestjs/common';
 import { ConfigModule, ConfigModuleOptions } from '@nestjs/config';
 import { z } from 'zod';
 
-import { ENVModuleOptions } from '../../interfaces/module-options.interface';
 import { ENVService } from './env.service';
+import { ENVModuleOptions } from './interfaces';
 
 @Module({})
 export class ENVModule {
