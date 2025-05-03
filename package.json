@@ -1,6 +1,6 @@
 {
   "name": "@furkanogutcu/nest-env",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Environment configuration module for NestJS with type-safe validation.",
   "author": "Furkan Ogutcu",
   "license": "MIT",
