@@ -11,7 +11,7 @@ export class ENVModule {
     const isGlobal = options.isGlobal ?? true;
 
     const configModuleOptions: ConfigModuleOptions = {
-      validate: (env) => options.schema.parse(env),
+      validate: (env) => options.schema.parse(env) as any,
       envFilePath: options.envFilePath,
       isGlobal,
       cache: options.cache,
